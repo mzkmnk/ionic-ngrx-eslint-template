@@ -182,7 +182,8 @@ export default tsEslint.config(
       ...angular.configs.templateRecommended,
     ],
     rules: {
-      '@angular-eslint/template/no-negated-async': 'off'
+      '@angular-eslint/template/no-negated-async': 'off',
+      '@angular-eslint/template/attributes-order':'error',
     }
   },
 
