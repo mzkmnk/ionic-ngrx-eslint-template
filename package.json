@@ -9,7 +9,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "check:eslint": "eslint",
+    "fix:eslint": "eslint --fix",
+    "ins:eslint": "npx eslint --inspect-config"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +29,13 @@
     "@capacitor/keyboard": "6.0.2",
     "@capacitor/status-bar": "6.0.1",
     "@ionic/angular": "^8.0.0",
+    "@ngrx/effects": "^18.0.2",
+    "@ngrx/operators": "^18.0.2",
+    "@ngrx/signals": "^18.0.2",
+    "@ngrx/store": "^18.0.2",
+    "@stylistic/eslint-plugin": "^2.7.2",
+    "angular-eslint": "^18.3.0",
+    "eslint-config-flat-gitignore": "^0.3.0",
     "ionicons": "^7.2.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -43,14 +52,12 @@
     "@angular/compiler-cli": "^18.0.0",
     "@angular/language-service": "^18.0.0",
     "@capacitor/cli": "6.1.2",
+    "@eslint/js": "^9.10.0",
     "@ionic/angular-toolkit": "^11.0.1",
+    "@ngrx/eslint-plugin": "^18.0.2",
+    "@types/eslint__js": "^8.42.3",
     "@types/jasmine": "~5.1.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsdoc": "^48.2.1",
-    "eslint-plugin-prefer-arrow": "1.2.2",
+    "eslint": "^9.10.0",
     "jasmine-core": "~5.1.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.0",
@@ -58,7 +65,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.0"
+    "typescript": "~5.4.0",
+    "typescript-eslint": "^8.4.0"
   },
   "description": "An Ionic project"
 }
